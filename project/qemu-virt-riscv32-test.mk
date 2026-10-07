@@ -14,3 +14,6 @@ ifeq ($(call TOBOOL,$(USE_RUST)),true)
 $(info "Including rust support")
 include project/virtual/rust.mk
 endif
+
+# soft i2c demo device
+MODULES += dev/i2c_soft
